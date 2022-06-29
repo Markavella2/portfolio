@@ -3206,10 +3206,12 @@ input, select, textarea {
 	body.is-preload #header:after {
 		opacity: 1;
 	}
-
+/* #three{
+	background-color: #ecea62;
+} */
 /* Footer */
 
-	#footer {
+	#footer, #about {
 		padding: 6em 0 6em 0 ;
 		background-color: #4686a0;
 		color: rgba(255, 255, 255, 0.75);
@@ -3638,7 +3640,7 @@ body {
 	*/
 
 .glow-on-hover {
-    width: 220px;
+    /* width: 220px; */
     height: 50px;
     border: none;
     outline: none;
@@ -3703,6 +3705,200 @@ body {
 }
 
 
-.changin{
+.changin, .changinBold{
 	font-family: 'Merriweather', serif;
+}
+
+.changinBold{
+	font-weight: 900;
+	font-style: italic;
+}
+
+.changin > span{
+	text-decoration: underline;
+}
+
+.proj, .btn{
+	font-family: 'Bangers', cursive;
+	font-size: 3em;
+}
+.btn{
+	font-size: 1.5em
+}
+
+/* FANCY BUTTONS */
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@300&display=swap');
+/* {
+  margin:0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Roboto Mono', monospace;
+}  */
+
+/* body {
+  width:100%;
+  position: relative;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  background: #000;
+  min-height:100vh;
+} */
+.containerButt
+{
+  width:600px;
+  display:flex;
+  flex-wrap:wrap;
+  justify-content:space-around;
+}
+.containerButt .btn {
+  position:relative;
+  width: 155px;
+  height: 55px;
+  margin:20px;
+}
+
+.containerButt .btn a
+{
+  position:absolute;
+  top:0;
+  left:0;
+  width:100%;
+  height:100%;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  background: rgba(255,255,255,0.05);
+  box-shadow: 0 15px 35px rgba(0,0,0,0.2);
+  border-top: 1px solid rgba(255,255,255,0.1);
+  border-bottom:1px solid rgba(255,255,255,0.1);
+  border-radius: 30px;
+  color: rgb(0, 0, 0);
+  z-index: 1;
+  font-size: 400;
+  font-weight: 300;
+  letter-spacing: 1px;
+  text-decoration: none;
+  overflow: hidden;
+  transition: 0.5s;
+  backdrop-filter: blur(15px);
+	margin:0;
+	padding: 0;
+	box-sizing: border-box;
+	/* font-family: 'Roboto Mono', monospace; */
+}
+
+.containerButt .btn:hover a
+{
+  letter-spacing: 3px;
+}
+
+.containerButt .btn a::before
+{
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 50%;
+  height: 100%;
+  background: linear-gradient(to left, rgba(164, 88, 235, 0.288),
+  transparent);
+  transform: skewX(45deg) translateX(0);
+  transition: 0.5s;
+}
+
+.containerButt .btn:hover a::before
+{
+  transform: skewX(45deg) translateX(200%);
+}
+.containerButt .btn::before
+{
+  content: '';
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: -5px;
+  width:30px;
+  height:10px;
+  background: rgb(17, 0, 255);
+  border-radius: 10px;
+  transition: 0.5s;
+  transition-delay: 0s;
+}
+.containerButt .btn:hover::before
+{
+  bottom: 0;
+  height: 50%;
+  width: 80%;
+  border-radius: 30px;
+  transition-delay: 0.25s;
+}
+
+.containerButt .btn::after
+{
+  content: '';
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  top: -5px;
+  width:30px;
+  height:10px;
+  background: rgb(17, 0, 255);
+  border-radius: 10px;
+  transition: 0.5s;
+  transition-delay: 0s;
+}
+
+.containerButt .btn:hover::after
+{
+  top: 0;
+  height: 50%;
+  width: 80%;
+  border-radius: 30px;
+  transition-delay: 0.25s;
+}
+
+.containerButt .btn:nth-child(1)::before,
+.containerButt .btn:nth-child(1)::after
+{
+  background: #07a4ec;
+  box-shadow: 0 0 5px #1eff45,
+  0 0 15px #109c27,
+  0 0 30px #1f9aff,
+  0 0 60px #b90fc9;
+}
+
+.containerButt .btn:nth-child(2)::before,
+.containerButt .btn:nth-child(2)::after
+{
+  background: #2bd2ff;
+  box-shadow: 0 0 5px #2bd2ff,
+  0 0 15px #2bd2ff,
+  0 0 30px #2bd2ff,
+  0 0 60px #2bd2ff;
+}
+
+.containerButt .btn:nth-child(3)::before,
+.containerButt .btn:nth-child(3)::after
+{
+  background: #1eff45;
+  box-shadow: 0 0 5px #1eff45,
+  0 0 15px #1eff45,
+  0 0 30px #1eff45,
+  0 0 60px #1eff45;
+}
+
+.aboot{
+	font-family: 'Permanent Marker', cursive;
+}
+
+.titles{
+	font-family: 'Yanone Kaffeesatz', sans-serif;
+	font-size: 1.75em;
+}
+
+#assist, #respond{
+	font-family: 'Goldman', cursive;
+	font-size: 1.25em;
 }
