@@ -2092,6 +2092,7 @@ input, select, textarea {
 		text-align: center;
 	}
 
+
 	header p {
 		color: #999;
 		margin: 0 0 1.5em 0;
@@ -2482,10 +2483,11 @@ input, select, textarea {
 
 #expert{
 	font-weight: bold;
-	font-size: 1.5em;
+	font-size: 2em;
 	display: flex;
 	justify-content: center;
 	align-items: center;
+	font-family: 'Dancing Script', cursive;
 }
 
 .expect{
