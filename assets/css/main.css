@@ -2491,7 +2491,11 @@ input, select, textarea {
 }
 
 .expect{
-	font-weight: bold;
+	/* font-weight: bold; */
+	font-family: 'Vast Shadow', cursive;
+}
+.look{
+	font-family: 'Balthazar', serif;
 }
 
 /* List */
@@ -3903,4 +3907,14 @@ body {
 #assist, #respond{
 	font-family: 'Goldman', cursive;
 	font-size: 1.25em;
+}
+
+.ready{
+	font-family: 'Gentium Book Basic', serif;
+}
+.intro{
+	font-family: 'Merienda One', cursive;
+}
+.todo{
+	font-family: 'Calligraffitti', cursive;
 }
