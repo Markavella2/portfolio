@@ -30,3 +30,10 @@
 		$('.scrolly').scrolly();
 
 })(jQuery);
+
+
+document.getElementById('myVideo').currentTime = 1;
+
+
+// Example:
+// https://stackoverflow.com/questions/44851514/restart-animated-gif-on-hover-css
