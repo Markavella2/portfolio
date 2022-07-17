@@ -19,6 +19,10 @@ font-family: 'Yanone Kaffeesatz', sans-serif; */
 	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
 */
 
+#btn{
+	font-size: 1.25em;
+}
+
 .play-on-hover{
 	width: 401px;
 	height: 240px;

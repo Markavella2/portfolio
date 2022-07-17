@@ -24,11 +24,11 @@
 <script type="text/javascript"
         src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js">
 </script>
-<script type="text/javascript">
+<!-- <script type="text/javascript">
    (function(){
       emailjs.init("nyyPy_rgFNRz-blMb");
    })();
-</script>
+</script> -->
 	</head>
 	<body class="is-preload">
 
@@ -195,19 +195,20 @@
 					<p id="assist">If you have a project you need some help with, allow me to assist. Email me at <a href="mailto:markavella1@gmail.com">markavella1@gmail.com</a></p>
 						<!-- , or fill out the contact form below. -->
 					<p id="respond">I typically respond to all inquiries within 24 hours.</p>
-					<!-- <form method="post" action="#">
+					<form id="myForm" method="post" action="#">
 						<div class="row">
-							<div class="col-6 col-12-mobile"><input type="text" name="name" placeholder="Name" /></div>
-							<div class="col-6 col-12-mobile"><input type="text" name="email" placeholder="Email" /></div>
+							<div class="col-6 col-12-mobile"><input id="toName" type="text" name="name" placeholder="Name" /></div>
+							<div class="col-6 col-12-mobile"><input id="fromName" type="text" name="email" placeholder="Email" /></div>
 							<div class="col-12">
-								<textarea name="message" placeholder="Message"></textarea>
+								<textarea id="msg" name="message" placeholder="Message"></textarea>
 							</div>
 							<div class="col-12">
-								<input type="submit" value="Send Message"/>
+								<!-- <input id="btn" onclick="sendMail()" type="submit" value="Send Message"/> -->
+								<button id="btn" class="btn">Submit Message</button>
 							</div>
 						</div>
 						
-					</form> -->
+					</form>
 					
 					<!-- <ul class="actions special">
 						<li><a href="#" class="button wide primary">Sign Up</a></li>

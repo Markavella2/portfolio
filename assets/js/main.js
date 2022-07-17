@@ -4,6 +4,8 @@
 	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
 */
 
+//const { EmailJSResponseStatus } = require("@emailjs/browser");
+
 (function($) {
 
 	var	$window = $(window),
@@ -31,40 +33,41 @@
 
 })(jQuery);
 
+//Email stuff
+
+const form = document.getElementById("myForm");
+
+(function (){
+	emailjs.init("nyyPy_rgFNRz-blMb");
+})();
+
+function sendMail(){
+	let tempParams = {
+		from_name: document.getElementById("fromName").value,
+		to_name: document.getElementById("toName").value,
+		message: document.getElementById("msg").value,
+		
+	};
+
+	emailjs
+		.send('service_5ozdmlf', 'template_0ia8or8', tempParams)
+		.then(function (res) {
+			console.log("Success", res.status);
+		
+		});
+}
+document.querySelector('#btn').addEventListener("click", function(e){
+	sendMail();
+	e.preventDefault();
+	alert("Your email has been sent. Thank you!");
+	form.reset();
+});
+
+
 
 //document.getElementById('myVideo').currentTime = 1;
-
-// var templateParams = {
-//     name: 'James',
-//     notes: 'Check this out!'
-// };
- 
-// emailjs.send('service_5ozdmlf', 'template_0ia8or8', templateParams)
-//     .then(function(response) {
-//        console.log('SUCCESS!', response.status, response.text);
-//     }, function(error) {
-//        console.log('FAILED...', error);
-//     });
 
 
 // Example:
 // https://stackoverflow.com/questions/44851514/restart-animated-gif-on-hover-css
 
-// var data = {
-//     service_id: 'service_5ozdmlf',
-//     template_id: 'template_0ia8or8',
-//     user_id: 'nyyPy_rgFNRz-blMb',
-//     template_params: {
-//         'username': 'Mark',
-//         }
-// };
- 
-// $.ajax('https://api.emailjs.com/api/v1.0/email/send', {
-//     type: 'POST',
-//     data: JSON.stringify(data),
-//     contentType: 'application/json'
-// }).done(function() {
-//     alert('Your mail is sent!');
-// }).fail(function(error) {
-//     alert('Oops... ' + JSON.stringify(error));
-// });
